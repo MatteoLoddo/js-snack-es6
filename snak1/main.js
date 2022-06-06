@@ -45,8 +45,6 @@ function pesoMinore (lista){
     for(let i=1; i < lista.length; i++){
 
         const {peso, nome} = lista[i]
-
-        debugger
         if(peso < biciPiuLeggera.peso){
             biciPiuLeggera ={
                 nome,

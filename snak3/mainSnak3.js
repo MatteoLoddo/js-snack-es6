@@ -38,10 +38,12 @@ console.log("lista con forEach()   " + listaNomiCompresi);
 
 const listaNomi2 = ['Michele', 'Fabio','Roberto','Monica','Federica','Francesco','Paolo','Umberto','Simone','Giovanni','Chiara']
 
-
-listaNomiCompresi2 = listaNomi2.filter(function(nome, i){
+// con il filter ciclo all interno dell array listaNomi2 
+listaNomiCompresi2 = listaNomi2.filter((nome, i)=>{
+    // dichiaro l indice di ogni nome
     const indiceNome = i+1;
 
+    // creo un return che mi dia un risultato un Booleano se vero allora pushera l elemento nell array listaNomiCompresi2
     return indiceNome < max && indiceNome > min
 })
 

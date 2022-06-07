@@ -2,37 +2,37 @@ const listaStudenti = [
     {
         nome: "Marco",
         id: 213,
-        grades:"78",
+        grades: 78,
     },
     {
         nome: "Paola",
         id: 110,
-        grades:"78",
+        grades: 96,
     },
     {
         nome: "Andrea",
         id: 250,
-        grades:"78",
+        grades: 48,
     },
     {
         nome: "Gaia",
         id: 145,
-        grades:"78",
+        grades: 74,
     },
     {
         nome: "Luigi",
         id: 196,
-        grades:"78",
+        grades: 68,
     },
     {
         nome: "Piero",
         id: 102,
-        grades:"78",
+        grades: 50,
     },
     {
         nome: "Francesca",
         id: 120,
-        grades:"78",
+        grades: 84,
     },
 ]
 
@@ -54,4 +54,22 @@ console.log(listaStudentiMaiuscolo);
 
 
 
-// 2: 
+// 2: stampo in console solo gli studenti con la KAY grades maggiore di 70
+const listaStudentiVoti =  listaStudenti.filter((studente, i)=>{
+    const voto = studente.grades;
+
+    return  voto > 70
+})
+
+console.log(listaStudentiVoti);
+
+//3:  stampo in console solo gli studenti con la KAY grades maggiore di 70 e la KAY id maggiore di 120
+
+const listaStudentiVoti2 =  listaStudenti.filter((studente, i)=>{
+    const voto = studente.grades;
+    const id = studente.id
+
+    return  voto > 70 && id > 120 
+})
+
+console.log(listaStudentiVoti2);
